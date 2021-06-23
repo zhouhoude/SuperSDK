@@ -1,0 +1,158 @@
+# compiler: R8
+# compiler_version: 1.6.67
+# pg_map_id: c7bd096
+# common_typos_disable
+com.sxsdk.collection.BuildConfig -> a.a.a.a:
+    java.lang.String VERSION_NAME -> g
+    int VERSION_CODE -> f
+    boolean DEBUG -> a
+    java.lang.String APPLICATION_ID -> c
+    java.lang.String LIBRARY_PACKAGE_NAME -> b
+    java.lang.String FLAVOR -> e
+    java.lang.String BUILD_TYPE -> d
+    1:1:void <init>():6:6 -> <init>
+com.sxsdk.collection.CollectionManager -> com.sxsdk.collection.CollectionManager:
+    1:1:void <init>():12:12 -> <init>
+    1:1:void getAllContacts(android.content.Context,com.sxsdk.collection.callback.InfoCallBack):44:44 -> getAllContacts
+    1:1:void getAppInfoList(android.content.Context,com.sxsdk.collection.callback.InfoCallBack):18:18 -> getAppInfoList
+    1:1:void getCalendarInfo(android.content.Context,com.sxsdk.collection.callback.InfoCallBack):57:57 -> getCalendarInfo
+    1:1:void getLocationInfo(android.content.Context,com.sxsdk.collection.callback.InfoCallBack):14:14 -> getLocationInfo
+    1:1:void getSmsInfoList(android.content.Context,com.sxsdk.collection.callback.InfoCallBack):31:31 -> getSmsInfoList
+com.sxsdk.collection.CollectionManager$1 -> com.sxsdk.collection.CollectionManager$a:
+    android.content.Context val$context -> a
+    com.sxsdk.collection.callback.InfoCallBack val$callback -> b
+    1:1:void <init>(android.content.Context,com.sxsdk.collection.callback.InfoCallBack):18:18 -> <init>
+    1:3:void run():22:24 -> run
+com.sxsdk.collection.CollectionManager$2 -> com.sxsdk.collection.CollectionManager$b:
+    android.content.Context val$context -> a
+    com.sxsdk.collection.callback.InfoCallBack val$callback -> b
+    1:1:void <init>(android.content.Context,com.sxsdk.collection.callback.InfoCallBack):31:31 -> <init>
+    1:3:void run():35:37 -> run
+com.sxsdk.collection.CollectionManager$3 -> com.sxsdk.collection.CollectionManager$c:
+    android.content.Context val$context -> b
+    com.sxsdk.collection.callback.InfoCallBack val$callback -> a
+    1:1:void <init>(com.sxsdk.collection.callback.InfoCallBack,android.content.Context):44:44 -> <init>
+    1:3:void run():48:50 -> run
+com.sxsdk.collection.CollectionManager$4 -> com.sxsdk.collection.CollectionManager$d:
+    android.content.Context val$context -> b
+    com.sxsdk.collection.callback.InfoCallBack val$callback -> a
+    1:1:void <init>(com.sxsdk.collection.callback.InfoCallBack,android.content.Context):57:57 -> <init>
+    1:3:void run():61:63 -> run
+com.sxsdk.collection.SXPoolExecutor -> a.a.a.b:
+    java.util.concurrent.ThreadFactory sThreadFactory -> d
+    long KEEP_ALIVE_TIME -> c
+    int MAX_CORE_POOL_SIZE -> b
+    int CPU_COUNT -> a
+    1:8:void <clinit>():21:28 -> <clinit>
+    1:1:void <init>():18:18 -> <init>
+    1:1:java.util.concurrent.ThreadPoolExecutor getPoolExecutor():39:39 -> a
+    2:5:java.util.concurrent.ThreadPoolExecutor getPoolExecutor(int):47:50 -> a
+com.sxsdk.collection.SXPoolExecutor$1 -> a.a.a.b$a:
+    java.util.concurrent.atomic.AtomicInteger mCount -> a
+    1:3:void <init>():28:30 -> <init>
+    1:1:java.lang.Thread newThread(java.lang.Runnable):34:34 -> newThread
+com.sxsdk.collection.util.AppInfoUtil -> a.a.a.c.a:
+    1:1:void <init>():13:13 -> <init>
+    1:18:void appInfoList(android.content.Context,com.sxsdk.collection.callback.InfoCallBack):16:33 -> a
+com.sxsdk.collection.util.ContactModel -> a.a.a.c.b:
+    1:1:void <init>():5:5 -> <init>
+    1:1:long getId():33:33 -> a
+    2:2:void setId(long):37:37 -> a
+    3:3:void setLast_time_contacted(java.lang.String):69:69 -> a
+    1:1:void setLast_time_used(java.lang.String):53:53 -> b
+    2:2:java.lang.String getLast_time_contacted():65:65 -> b
+    1:1:void setMobile(java.lang.String):21:21 -> c
+    2:2:java.lang.String getLast_time_used():49:49 -> c
+    1:1:java.lang.String getMobile():17:17 -> d
+    2:2:void setName(java.lang.String):29:29 -> d
+    1:1:java.lang.String getName():25:25 -> e
+    2:2:void setSource(java.lang.String):45:45 -> e
+    1:1:java.lang.String getSource():41:41 -> f
+    2:2:void setTimes_contacted(java.lang.String):77:77 -> f
+    1:1:void setUp_time(java.lang.String):61:61 -> g
+    2:2:java.lang.String getTimes_contacted():73:73 -> g
+    1:1:java.lang.String getUp_time():57:57 -> h
+com.sxsdk.collection.util.ContactsUtil -> a.a.a.c.c:
+    android.content.Context mContext -> a
+    java.lang.String[] PHONES_PROJECTION -> d
+    java.lang.String TYPE_SIM -> c
+    java.lang.String TYPE_DEVIECE -> b
+    java.lang.String LIMIT_PARAM_KEY -> e
+    1:1:void <init>(android.content.Context):35:35 -> <init>
+    2:8:void <init>(android.content.Context):30:36 -> <init>
+    1:18:com.alibaba.fastjson.JSONArray getContactsInfo():40:57 -> a
+    19:105:java.util.ArrayList fillDetailInfo(int,int):111:197 -> a
+    106:121:java.util.ArrayList queryGroups(java.lang.Long):205:220 -> a
+    1:11:java.util.List queryContacts(int,int):66:76 -> b
+    12:36:java.util.ArrayList getSimContactInfoList():80:104 -> b
+com.sxsdk.collection.util.LoctionUtil -> a.a.a.c.d:
+    android.location.LocationManager locationManager -> a
+    android.location.LocationListener locationListener -> b
+    1:1:void <init>():24:24 -> <init>
+    1:1:void access$000(android.content.Context,android.location.Location,com.sxsdk.collection.callback.InfoCallBack):24:24 -> a
+    2:2:void access$100():24:24 -> a
+    3:37:void getLocation(android.content.Context,com.sxsdk.collection.callback.InfoCallBack):30:64 -> a
+    1:2:void stopLocation():71:72 -> b
+    3:41:void location(android.content.Context,android.location.Location,com.sxsdk.collection.callback.InfoCallBack):81:119 -> b
+com.sxsdk.collection.util.LoctionUtil$1 -> a.a.a.c.d$a:
+    android.content.Context val$context -> a
+    com.sxsdk.collection.callback.InfoCallBack val$callBack -> b
+    1:1:void <init>(android.content.Context,com.sxsdk.collection.callback.InfoCallBack):31:31 -> <init>
+    1:2:void onLocationChanged(android.location.Location):34:35 -> onLocationChanged
+com.sxsdk.collection.util.RDataUtil -> a.a.a.c.e:
+    java.lang.String CHINESE_PATTERN -> a
+    1:1:void <init>():17:17 -> <init>
+    1:3:boolean match(java.lang.String,java.lang.String):21:23 -> a
+    4:29:java.lang.String filterOffUtf8Mb4(java.lang.String):33:58 -> a
+    1:1:boolean isValidChinaChar(java.lang.String):28:28 -> b
+com.sxsdk.collection.util.SMSInfoUtil -> a.a.a.c.f:
+    1:1:void <init>():12:12 -> <init>
+    1:22:void smsInfoList(android.content.Context,com.sxsdk.collection.callback.InfoCallBack):28:49 -> a
+com.sxsdk.collection.util.calendar.CalendarConstantData -> a.a.a.c.g.a:
+    java.lang.String CALENDAR_EVENT_REPEAT_EVERY_2_WEEK_RRULE -> g
+    java.lang.String CALENDAR_EVENT_REPEAT_EVERY_WEEK_RRULE -> f
+    int CALENDAR_EVENT_REPEAT_NEVER -> o
+    java.lang.String CALENDAR_EVENT_REPEAT_EVERY_YEAR_RRULE -> i
+    java.lang.String CALENDAR_EVENT_REPEAT_EVERY_MONTH_RRULE -> h
+    java.lang.String CALENDARS_ACCOUNT_NAME -> k
+    java.lang.String CALENDARS_NAME -> j
+    java.lang.String CALENDARS_DISPLAY_NAME -> m
+    java.lang.String CALENDARS_ACCOUNT_TYPE -> l
+    java.lang.String CAL_ACCESS_OWNER -> n
+    android.net.Uri REMINDER_URI -> d
+    android.net.Uri INSTANCE_URI -> c
+    android.net.Uri EVENT_URI -> b
+    android.net.Uri CALENDAR_URI -> a
+    int IS_ALL_DAY -> v
+    int NOT_DELETE -> w
+    int CALENDAR_EVENT_REPEAT_EVERY_YEAR -> t
+    int CALENDAR_EVENT_REPEAT_UNKNOWN -> u
+    int CALENDAR_EVENT_REPEAT_EVERY_2_WEEK -> r
+    int CALENDAR_EVENT_REPEAT_EVERY_MONTH -> s
+    java.lang.String CALENDAR_EVENT_REPEAT_EVERY_DAY_RRULE -> e
+    int CALENDAR_EVENT_REPEAT_EVERY_DAY -> p
+    int CALENDAR_EVENT_REPEAT_EVERY_WEEK -> q
+    1:21:void <clinit>():13:33 -> <clinit>
+    1:1:void <init>():10:10 -> <init>
+com.sxsdk.collection.util.calendar.CalendarTools -> a.a.a.c.g.b:
+    java.lang.String TAG -> a
+    java.text.SimpleDateFormat format_ymdhms -> b
+    1:1:void <clinit>():19:19 -> <clinit>
+    1:1:void <init>():15:15 -> <init>
+    1:2:java.lang.String getEventDuration(long,long):31:32 -> a
+    3:8:java.lang.String getRRULE(int,long):69:74 -> a
+    9:10:java.util.Calendar getCalendar(long):81:82 -> a
+    11:16:long getEndTimeOfLastDaySecond(java.util.Calendar):103:108 -> a
+    17:26:long RFC2445ToMilliseconds(java.lang.String):113:122 -> a
+    1:1:java.lang.String getSsimpleDateFormatYMDHMS(long):87:87 -> b
+    2:7:long getStartTimeOfDaySecond(java.util.Calendar):93:98 -> b
+    8:20:int getRepeatByRRULE(java.lang.String):133:145 -> b
+com.sxsdk.collection.util.calendar.CalendarUtil -> a.a.a.c.g.c:
+    java.lang.String TAG -> a
+    1:1:void <init>():18:18 -> <init>
+    1:15:long checkCalendarAccounts(android.content.Context):30:44 -> a
+    16:27:long checkCalendarAccounts(android.content.Context):35:46 -> a
+    28:30:long dealAllDayStartTime(long):124:126 -> a
+    1:53:com.alibaba.fastjson.JSONArray queryCalendarEvent(android.content.Context):56:108 -> b
+    54:57:com.alibaba.fastjson.JSONArray queryCalendarEvent(android.content.Context):106:109 -> b
+    58:60:long dealAllDaysEndTime(long):140:142 -> b

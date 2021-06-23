@@ -1,0 +1,3 @@
+rootProject.name='SuperSDK'
+include ':app'
+include ':collection-sdk'
