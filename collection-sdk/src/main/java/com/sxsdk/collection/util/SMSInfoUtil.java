@@ -31,8 +31,7 @@ public class SMSInfoUtil {
      */
     public static synchronized void smsInfoList(Context context, InfoCallBack callback) {
         JSONArray smsList = new JSONArray();
-        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED
-                || ActivityCompat.checkSelfPermission(context, Manifest.permission.READ_PHONE_NUMBERS) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED) {
             callback.result(smsList.toJSONString());
             return;
         }
