@@ -115,7 +115,7 @@ public class LoctionUtil {
             json.put("latitude", location.getLatitude());
             json.put("address", addressDetail);
             json.put("addressInfo", addressJson);
-            json.put("longitude", format.format(new Date(location.getTime())));
+            json.put("time", format.format(new Date(location.getTime())));
             callBack.result(json.toJSONString());
         }
     }
